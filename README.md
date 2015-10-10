@@ -10,7 +10,7 @@
 摆脱实体店铺的束缚，使购书过程更加便捷。
 
 ## 开发文档
- 见wiki
+ 见[wiki](https://github.com/yyrdl/BookShop/wiki)
  
 ## 成员
 * 马宗亮
