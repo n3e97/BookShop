@@ -1,0 +1,25 @@
+{
+  "name": "book_shop",
+  "version": "1.0.0",
+  "description": "DUT software engineering task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start":"node app.js"
+  },
+  "dependencies":{
+	  "express":"*",
+	  "mysql":"*",
+	  "path":"*"
+  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyrdl/BookShop.git"
+  },
+  "author": "zj,zongliang ma,qingqing li,dan zhang ,menglin zhou,ye yao,jiaman li,xiao luo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yyrdl/BookShop/issues"
+  },
+  "homepage": "https://github.com/yyrdl/BookShop#readme"
+}
