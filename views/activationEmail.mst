@@ -1,0 +1,9 @@
+<div style="margin-top:10px;margin-left:10px">
+    <p>尊敬的{{name}}:</p>
+</div>
+<div style="margin-left:50px;">
+    <p>非常感谢您选择speedUpShop,请于俩小时内点击下面的链接激活您的账户.我们一直在努力，只为提供更优质的服务 :)</p>
+    <p>This is an activation Email,please click the link below to activate your account in two hours.Thanks for choosing Wecash,
+        we are striving ,just for the best service!</p>
+    <a title="账户激活链接" href="{{link}}">{{link}}</a>
+</div>
