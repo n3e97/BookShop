@@ -10,7 +10,15 @@
   "dependencies":{
 	  "express":"*",
 	  "mysql":"*",
-	  "path":"*"
+	  "path":"*",
+      "nodemailer":"*",
+      "nodemailer-smtp-pool":"*",
+      "mustache-promise":"*",
+      "body-parser": "~1.13.2",
+      "cookie-parser": "~1.3.5",
+      "serve-favicon": "~2.3.0",
+      "morgan":"~1.6.1"
+
   }
   "repository": {
     "type": "git",
