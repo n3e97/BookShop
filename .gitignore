@@ -1,0 +1,13 @@
+#intellij config
+.idea
+
+#npm dependency
+node_modules
+
+#bower dependency
+public/lib
+
+#npm log
+npm-debug.log
+
+build
