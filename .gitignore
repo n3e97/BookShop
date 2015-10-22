@@ -7,6 +7,9 @@ node_modules
 #bower dependency
 public/lib
 
+#img
+public/img
+
 #npm log
 npm-debug.log
 
