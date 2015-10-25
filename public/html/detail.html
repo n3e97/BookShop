@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>首页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="file:///F|/lijiaman/BookShop/public/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="file:///F|/lijiaman/BookShop/public/css/font-awesome.min.css" rel="stylesheet">
+    <script src="file:///F|/lijiaman/BookShop/public/js/jquery-2.1.4.min.js"></script>
+    <script src="file:///F|/lijiaman/BookShop/public/js/bootstrap.min.js"></script>
+<style>
+ul{ padding:0; margin:0;}
+.lcrbox { margin: 40px 10px; overflow: hidden }
+.lcr_l, .lcr_r { display: block; position: relative; top: 50%; margin-right: 0; text-align: center }
+.lcr_l { float: left }
+.lcr_r { float: right }
+.lcr_c { height: 100%; overflow: hidden; position: relative }
+.lcr_c ul { white-space: nowrap; font-size: 0 }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.lcr_c ul { display: inline-table; vertical-align: top }
+}
+.lcr_c li { display: inline; font-size: 13px }
+.lcr_c li a { display: inline-block }
+.lcr_c img { padding: 2px; border: #dadada solid 1px }
+.lcrbox01 { height: 220px; position: relative; margin-top: 0 }
+.lcrbox01 .lcr_l, .lcrbox01 .lcr_r { width: 17px; height: 36px; line-height:36px;  margin-top: -18px; background-color: #fff; position: absolute; z-index: 100 }
+.lcrbox01 .lcr_l { left: 0; border-radius: 0 3px 3px 0; opacity: .5; filter: alpha(opacity=50) }
+.lcrbox01 .lcr_l:hover { opacity: .8; filter: alpha(opacity=80) }
+.lcrbox01 .lcr_r { right: 0; border-radius: 3px 0 0 3px; opacity: .5; filter: alpha(opacity=50) }
+.lcrbox01 .lcr_r:hover { opacity: .8; filter: alpha(opacity=80) }
+.lcrbox01 .lcr_c { z-index: 99 }
+.lcrbox01 .lcr_c li { padding-left: 10px }
+.lcrbox01 .lcr_c .scroll_first { padding-left: 0 }
+.lcrbox01 .lcr_c img { width:265px;height:200px;}
+.lcrbox01 .lcr_l .ico, .lcrbox01 .lcr_r .ico { margin-top: 13px }
+:root .lcrbox01 .lcr_l, :root .lcrbox01 .lcr_l:hover, :root .lcrbox01 .lcr_r, :root .lcrbox01 .lcr_r:hover { filter: none }
+#goods img {width:250px;}
+</style>
+</head>
+<body>
+  <div id="container">
+    <!--注册登录界面--> 
+    <div id="headbar" class="navbar navbar-default" role="navigation" style="margin-bottom:0;">
+        <ul class="nav navbar-nav">
+          <li class="navbar-text"><span class="fa fa-phone"></span>0878-2012815</li>
+          <li><a href="#"><span class="fa fa-comment-o"></span>在线客服</a></li>
+          <li><a href="#"><span class="fa fa-cog"></span>获得帮助</a></li>
+        </ul>  
+    <ul class="nav navbar-nav pull-right"  style="height:40px;margin:0;">
+          <li><a href="#" >登录</a></li>
+          <li ><a href="#">注册</a></li>
+    </ul>   
+    </div><!--end #header-->
+    <!--顶部导航栏--> 
+    <div style="background:#06C;">
+      <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1" >
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">网站LOGO</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse1">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><span class="fa fa-home"></span>首页</a></li>
+            <li><a href="#">栏目二</a></li>
+            <li><a href="#">栏目三</a></li>
+            <li><a href="#">栏目四</a></li>
+            <li>
+              <form class="navbar-form navbar-left" role="search">
+                <input type="text" class="form-control" placeholder="输入关键字" />
+                <button type="submit" class="btn btn-dafault">搜索</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div><!--end #nav-->
+    
+    <div class="container">
+      <div id="goods" class="row" style="border:solid 1px #09C;">
+        <div class="col-md-5 col-sm-12" id="goods_picture">
+          <img src="file:///F|/lijiaman/BookShop/public/img/c.jpg">
+        </div>
+        <div class="col-md-7 col-sm-12" id="good_buy">
+          <p><strong>名字：<span id="book_name"></span></strong></p>
+          <p>价格：<span class="fa fa-cny" id="book_price"></span></p>
+          <p>配送至：<span id="book_location"></span></p>
+          <p>购买数量：</p>
+          <p>
+             <button type="submit" class="btn btn-primary">购买</button>
+             <button type="submit" class="btn btn-default" >收藏</button>
+          </p>
+        </div>
+      </div> <!--end #goods-->   
+      <div style="height:50px;" ></div>
+      <div id="goods_detail"> 
+        <ul id="myTab_detail" class="nav nav-tabs">
+          <li class="active"><a href="#detail" data-toggle="tab">商品详情</a></li>
+          <li><a href="#comment" data-toggle="tab">商品评论</a></li>
+          <li><a href="#else" data-toggle="tab">其它内容</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade in active" id="detail">
+            <p>这里放置商品介绍的文章</p>
+          </div>
+          <div class="tab-pane fade" id="comment">
+            <p>这里放置评论</p>
+          </div>
+          <div class="tab-pane fade" id="else">
+            <p>其它栏目</p>
+          </div>
+        </div>
+<script>
+   $(function(){
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+      // 获取已激活的标签页的名称
+      var activeTab = $(e.target).text(); 
+      // 获取前一个激活的标签页的名称
+      var previousTab = $(e.relatedTarget).text(); 
+      $(".active-tab span").html(activeTab);
+      $(".previous-tab span").html(previousTab);
+   });
+});
+</script>
+
+</body>
+</html>			 
+      </div> <!--end #goods_detail-->
+      
+    </div> <!--end .container-->   
+    
+  <!--脚注-->
+  <footer class="footer" style="background:#E8E8E8;height:100px; margin-top:40px;">
+   <div class="row">
+     <div class="col-sm-offset-3 col-sm-3 hidden-xs">
+       <h4>bookshop.com</h4>
+       <ul id="footer1">
+         <li><a href="#">关于我们</a></li>
+         <li><a href="#">网站更新</a></li>
+       </ul>
+     </div>
+     <div class="col-sm-3 hidden-xs">
+       <h4>常见问题</h4>
+       <ul id="footer2">
+         <li><a href="#">购买与支付</a></li>
+         <li><a href="#">其他问题</a></li>
+       </ul>
+     </div>
+     <div class="col-sm-3 hidden-xs">
+       <h4>销售联系</h4>
+       <ul id="footer3">
+         <li><span class="fa fa-phone">0878-2012815</span></li>
+         <li><span class="fa fa-qq"></span>961892352</li>
+       </ul>
+     </div>
+   </div>
+  </footer> <!--end .footer-->
+</body>
+</html>
+

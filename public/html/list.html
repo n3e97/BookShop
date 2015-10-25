@@ -153,77 +153,160 @@ ul{ padding:0; margin:0;}
       
       <!--右侧内容栏-->
       <div class="col-sm-10 col-xs-12" style="border:blue 1px solid;padding:0 40px" >
-        <!--第一子栏-->
-        <div class="h4">主打推荐</div>
-        <div id="lcrboxslide" class="lcrbox lcrbox01" style="width:100%;"> 
-          <a title="prev" class="lcr_l" href="javascript:;">&lt;</a>
-          <a title="next" class="lcr_r" href="javascript:;">&gt;</a>
-          <div class="lcr_c">
-            <ul  style="position: absolute;" class="overview">
-              <li class="scroll_first"><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
+        <!--顶部选择、翻页栏-->
+        <div class="btn-toolbar" role="toolbar" style="margin-bottom:40px;">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">销量</button>
+            <button type="button" class="btn btn-default">人气</button>
+            <button type="button" class="btn btn-default">价格</button>
+            <button type="button" class="btn btn-default">其它功能</button>
+          </div>
+          <div>
+            <ul  class="pagination pull-right" style="margin:0px;">
+             <li><a href="#">&laquo;上一页</a></li>
+             <li><a href="#">下一页&raquo;</a></li>
             </ul>
           </div>
-        </div>
-        <!--第二子栏-->
-        <div class="h4">特销专区</div>
-        <div id="lcrboxslide" class="lcrbox lcrbox01" style="width:100%;"> 
-          <a title="prev" class="lcr_l" href="javascript:;">&lt;</a>
-          <a title="next" class="lcr_r" href="javascript:;">&gt;</a>
-          <div class="lcr_c">
-            <ul  style="position: absolute;" class="overview">
-              <li class="scroll_first"><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-            </ul>
+        </div><!--顶部选择翻页栏-->
+        <!--图书列表-->
+        <div id="items">
+         <div class="row">
+          <div class="col-sm-6 col-md-3" style="border:1px #999 solid; ">
+           <div class="thumbnail">
+            <img src="file:///F|/lijiaman/BookShop/public/img/Koala.jpg" alt="通用的占位符缩略图">
+           </div>
+          <div class="caption">
+            <h3>书名</h3>
+            <p>价格</p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">
+                购买
+              </a>  <a href="#" class="btn btn-default" role="button">
+               收藏
+              </a>
+            </p>
           </div>
         </div>
-      <!--第三子栏-->
-        <div class="h4">考试必备</div>
-        <div id="lcrboxslide" class="lcrbox lcrbox01" style="width:100%;"> 
-          <a title="prev" class="lcr_l" href="javascript:;">&lt;</a>
-          <a title="next" class="lcr_r" href="javascript:;">&gt;</a>
-          <div class="lcr_c">
-            <ul  style="position: absolute;" class="overview">
-              <li class="scroll_first"><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-              <li><a href="#"><img src="file:///C|/Users/ljm/Desktop/软件工程训练/images/image-08.jpg"></a></li>
-            </ul>
+        <div class="col-sm-6 col-md-3" style="border:1px #999 solid; ">
+           <div class="thumbnail">
+            <img src="file:///F|/lijiaman/BookShop/public/img/Koala.jpg" alt="通用的占位符缩略图">
+           </div>
+          <div class="caption">
+            <h3>书名</h3>
+            <p>价格</p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">
+                购买
+              </a>  <a href="#" class="btn btn-default" role="button">
+               收藏
+              </a>
+            </p>
           </div>
         </div>
-      </div>
+         <div class="col-sm-6 col-md-3" style="border:1px #999 solid; ">
+           <div class="thumbnail">
+            <img src="file:///F|/lijiaman/BookShop/public/img/Koala.jpg" alt="通用的占位符缩略图">
+           </div>
+          <div class="caption">
+            <h3>书名</h3>
+            <p>价格</p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">
+                购买
+              </a>  <a href="#" class="btn btn-default" role="button">
+               收藏
+              </a>
+            </p>
+          </div>
+        </div>
+         <div class="col-sm-6 col-md-3" style="border:1px #999 solid; ">
+           <div class="thumbnail">
+            <img src="file:///F|/lijiaman/BookShop/public/img/Koala.jpg" alt="通用的占位符缩略图">
+           </div>
+          <div class="caption">
+            <h3>书名</h3>
+            <p>价格</p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">
+                购买
+              </a>  <a href="#" class="btn btn-default" role="button">
+               收藏
+              </a>
+            </p>
+          </div>
+        </div>
+          <div class="col-sm-6 col-md-3" style="border:1px #999 solid; ">
+           <div class="thumbnail">
+            <img src="file:///F|/lijiaman/BookShop/public/img/Koala.jpg" alt="通用的占位符缩略图">
+           </div>
+          <div class="caption">
+            <h3>书名</h3>
+            <p>价格</p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">
+                购买
+              </a>  <a href="#" class="btn btn-default" role="button">
+               收藏
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3" style="border:1px #999 solid; ">
+           <div class="thumbnail">
+            <img src="file:///F|/lijiaman/BookShop/public/img/Koala.jpg" alt="通用的占位符缩略图">
+           </div>
+          <div class="caption">
+            <h3>书名</h3>
+            <p>价格</p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">
+                购买
+              </a>  <a href="#" class="btn btn-default" role="button">
+               收藏
+              </a>
+            </p>
+          </div>
+        </div>
+         <div class="col-sm-6 col-md-3" style="border:1px #999 solid; ">
+           <div class="thumbnail">
+            <img src="file:///F|/lijiaman/BookShop/public/img/Koala.jpg" alt="通用的占位符缩略图">
+           </div>
+          <div class="caption">
+            <h3>书名</h3>
+            <p>价格</p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">
+                购买
+              </a>  <a href="#" class="btn btn-default" role="button">
+               收藏
+              </a>
+            </p>
+          </div>
+        </div>
+         <div class="col-sm-6 col-md-3" style="border:1px #999 solid; ">
+           <div class="thumbnail">
+            <img src="file:///F|/lijiaman/BookShop/public/img/Koala.jpg" alt="通用的占位符缩略图">
+           </div>
+          <div class="caption">
+            <h3>书名</h3>
+            <p>价格</p>
+            <p>
+              <a href="#" class="btn btn-primary" role="button">
+                购买
+              </a>  <a href="#" class="btn btn-default" role="button">
+               收藏
+              </a>
+            </p>
+          </div>
+        </div>
+      </div><!--end .row-->
+    </div><!--end #items-->
+   </div><!--end 右侧内容栏-->
       
     </div> <!--end .row-->   
   </div><!--end .container-->
-  <footer class="footer" style="background:#E8E8E8;height:100px;">
+  <!--脚注-->
+  <footer class="footer" style="background:#E8E8E8;height:100px; margin-top:40px;">
    <div class="row">
      <div class="col-sm-offset-3 col-sm-3 hidden-xs">
        <h4>bookshop.com</h4>
@@ -247,79 +330,6 @@ ul{ padding:0; margin:0;}
        </ul>
      </div>
    </div>
-  </footer> 
-<script type="text/javascript" src="软件工程训练/bootstrap-master/js/tests/vendor/jquery.min.js"></script>
-<script>
-/*
- * 左右滚动插件 Bate V 0.01 
- * 作者：三藏
- * 作者网站：atued http://www.atued.com/
- * 日期: 2013-07-10
-*/
-(function($){
-    /*左右滚动*/
-    var defaults={
-        cont:'',
-        prev:'.prev',
-        next:'.next',
-        time:1000,//滚动时间
-        distance: null, //滚动距离
-        auto: false,
-		autoDelay:"3000"
-    };
-
-    $.fn.slider=function(options){
-        var o= $.extend({},defaults,options||{}),self=this;
-        var jqCont=$(o.cont,self);
-        var jqContWidth=jqCont.width();
-        var dist= 0,maxDist=jqContWidth- o.distance;
-		
-		var setInt;             //自动滚动定时器变量
-        
-		
-        //向前滚动
-        $(o.prev,self).bind('click',function(){
-            if(dist>=0)return;
-            dist+= o.distance;
-            if(dist>=0)dist=0;
-            jqCont.stop().animate({left:dist}, o.time);
-        });
-        //向后滚动
-        $(o.next,self).bind('click',function(){
-            if(Math.abs(dist)>=maxDist)return;
-            dist+= -o.distance;
-            if(Math.abs(dist)>=jqContWidth)dist=-maxDist;
-            jqCont.stop().animate({left:dist}, o.time);
-        });
-		
-		//自动滚动
-       /* self.bind({
-			'mouseenter': function() {
-				clearInterval(setInt);  
-			},
-			'mouseleave':function(){
-				setInt = setInterval(function () {
-					$(o.next, self).trigger("click");
-				},o.autoDelay);
-			}	
-		});
-		if (o.auto) {
-		  self.trigger("mouseleave");
-        }*/
-		
-    };
-
-})(jQuery);
-
-//滚动
-$('#lcrboxslide').slider({
-	cont: '.overview',
-	prev: '.lcr_l',
-	next: '.lcr_r',
-	distance: 1100,
-	time: 1500,
-	auto: true
-});
-</script>
+  </footer> <!--end .footer-->
 </body>
 </html>
