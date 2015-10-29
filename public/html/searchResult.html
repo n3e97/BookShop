@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../css/global.css"/>
-    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/searchResult.css"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-custom navbar-fixed-top">
@@ -42,42 +40,25 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 </nav>
-<div class="index_bg">
-    <img src="../image/index_bg.jpg"/>
-    <div>
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"></div>
-              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                  <div class="s_con first_str">
-                      SpeedUp BookShop
-                  </div>
-                  <div class="my_divider_small"></div>
-                  <div class="s_con second_str">
-                      <p>A Website About Second Hand Books</p>
-                  </div>
-                  <div class="s_con">
-                      <div class="enter">
-                         <a href="./searchResult.html" class="">ENTER</a>
-                      </div>
-                  </div>
-                  <div class="s_con third_str">
-                       <p>Always be here, Never Change. </p>
-                       <p>just   for   speeding   up   your   learning    process.</p>
-                  </div>
-              </div>
-              <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"></div>
-          </div>
-      </div>
-    </div>
+<div class="my_nav"></div>
+<div class="container search_input">
+   <div class="row">
+       <div class="col-lg-6 col-sm-10">
+           <input type="text" class="form-control" id="search_tag" placeholder="Input bookname,author,or tag"/>
+       </div>
+       <div class="col-lg-2 col-sm-2">
+           <button class="btn btn-default" type="button">Search</button>
+       </div>
+       <div class="col-lg-4 col-sm-0"></div>
+   </div>
 </div>
-<div class="my_divider_large"></div>
-<div class="container index_images"><!--这里还需加工-->
+<div class="container">
+    <h2 style="color:#ccc">SEARCH RESULTS</h2>
+</div>
+<div class="searchResult">
     <div class="row da-thumbs">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div>
@@ -165,39 +146,24 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div>
-                <a href="#" class="book_item">
-                    <img src="../image/t3.jpg" class="index_img"/>
-                    <div class="hot_info">
-                        <h4 title="新华网" class="book_name">欧亨利短篇小说集</h4>
-                        <p class="book_info">
-                            欧·亨利被全世界读者公认为二十世纪初最好的短篇小说家，有“美国的莫泊桑”之称，直到今天，故事结局的精彩转折依然被称为“欧·亨利式结尾”。本书收有 ...
-                        </p>
-                        <div class="book_price"><i class="fa fa-jpy"></i><span> 55.0</span></div>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-            <div>
-                <a href="#" class="book_item">
-                    <img src="../image/t4.jpg" class="index_img"/>
-                    <div class="hot_info">
-                        <h4 title="新华网" class="book_name">欧亨利短篇小说集</h4>
-                        <p class="book_info">
-                            欧·亨利被全世界读者公认为二十世纪初最好的短篇小说家，有“美国的莫泊桑”之称，直到今天，故事结局的精彩转折依然被称为“欧·亨利式结尾”。本书收有 ...
-                        </p>
-                        <div class="book_price"><i class="fa fa-jpy"></i><span> 55.0</span></div>
-                    </div>
-                </a>
-            </div>
-        </div>
     </div>
+</div>
+<div class="container" style="text-align: center">
+    <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
 </div>
 <div class="my_divider_middle"></div>
 <div class="container footer">
     <p>© 2015 SPEEDUPBOOKSHOP.COM • SITE BY ZJ</p>
 </div>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/searchResult.js"></script>
 </body>
 </html>

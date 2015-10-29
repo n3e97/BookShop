@@ -1,0 +1,20 @@
+{{#rows}}
+<div class="row da-thumbs">
+    {{#cols}}
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+        <div>
+            <a href="{{book_detail_url}}" class="book_item">
+                <img src="{{img_url}}" class="index_img"/>
+                <div class="hot_info">
+                    <h4 title="{{title}}" class="book_name">{{title}}</h4>
+                    <p class="book_info">
+                        {{book_info}}
+                    </p>
+                    <div class="book_price"><i class="fa fa-jpy"></i><span>{{price}}</span></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    {{/cols}}
+</div>
+{{/rows}}

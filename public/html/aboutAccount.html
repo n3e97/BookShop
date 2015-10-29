@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpeedUp</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../css/aboutAccount.css"/>
+    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/aboutAccount.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="index_logo" href="./index.html"><i>SpeedUp BookShop</i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div id="navbar" class="navbar-collapse ">
+                    <div class="row pull-right">
+                        <div class="search col-lg-8 col-md-8 col-sm-8">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                <input type="text" class="form-control search-input" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 s_sign"><a href="./aboutAccount.html?t=1">Login</a></div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 s_sign"><a href="./aboutAccount.html?t=2">Register</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container aboutAccount">
+    <div class="row">
+        <div class="col-lg-12" id="login_text">
+            <div class="pull-left create_account_text">Login</div>
+        </div>
+        <div class="col-lg-12" id="register_text">
+            <div class="pull-left create_account_text">CREATE ACCOUNT</div>
+        </div>
+        <div class="col-lg-12" id="reset_text">
+            <div class="pull-left create_account_text">RESET ACCOUNT</div>
+        </div>
+    </div>
+    <div class="row">
+        <form class="form-horizontal" role="form" id="login_form" action="#">
+            <a data-toggle="collapse"  href="#collapseTar1" id="messageButton1"></a>
+            <div class="form-group">
+                <label class="col-md-4 control-label">E-Mail Address</label>
+                <div class="col-md-6">
+                    <input type="email" required='true' class="form-control" id="login_email" value=""/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Password</label>
+                <div class="col-md-6">
+                    <input type="password" required='true' class="form-control" id="login_password"/>
+                </div>
+            </div>
+            <div id="collapseTar1" class="panel-collapse collapse">
+                <div class="col-md-6 col-md-offset-4">
+                    <div class="panel-body text-left" id="messageBox1"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                    <div class="col-md-6 col-md-offset-4">
+                        <button type="submit" class="btn btn-primary" id="login_submit">Login</button>
+                        <a class="btn btn-link" href="./aboutAccount.html?t=3">Forgot Your Password?</a>
+                    </div>
+            </div>
+        </form>
+        <form class="form-horizontal" role="form" id="register_form">
+            <a data-toggle="collapse"  href="#collapseTar2" id="messageButton2"></a>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Username</label>
+                <div class="col-md-3">
+                    <input required="true" type="text" class="form-control" id="register_username" value="">
+                </div>
+                <div class="col-md-4">
+                    <small>example:杨同学</small>
+                    <br />
+                    <small>5-16 characters</small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Phone</label>
+                <div class="col-md-6">
+                    <input required="true" type="number" class="form-control" id="register_phone" value="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">E-Mail Address</label>
+                <div class="col-md-6">
+                    <input required="true"  type="email" class="form-control" id="register_email" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Address</label>
+                <div class="col-md-3">
+                    <input required="true" type="text" class="form-control" id="register_address" value="">
+                </div>
+                <div class="col-md-4">
+                    <small>example:6舍506</small>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Password</label>
+                <div class="col-md-6">
+                    <input required="true"  type="password" class="form-control" id="register_password">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Confirm Password</label>
+                <div class="col-md-6">
+                    <input required="true" type="password" class="form-control" id="password_confirmation">
+                </div>
+            </div>
+            <div id="collapseTar2" class="panel-collapse collapse">
+                <div class="col-md-6 col-md-offset-4">
+                    <div class="panel-body text-left" id="messageBox2"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 col-md-offset-4">
+                    <button id="register_submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal" role="form" id="reset_form">
+            <a data-toggle="collapse"  href="#collapseTar3" id="messageButton3"></a>
+            <div class="form-group">
+                <label class="col-md-4 control-label">E-Mail Address</label>
+                <div class="col-md-6">
+                    <input type="email" required='true' class="form-control" id="reset_email" value="">
+                </div>
+            </div>
+            <div id="collapseTar3" class="panel-collapse collapse">
+                <div class="col-md-6 col-md-offset-4">
+                    <div class="panel-body text-left" id="messageBox3"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 col-md-offset-4">
+                    <button  class="btn btn-primary" id="reset_submit">Send Password Reset Link</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="my_divider_middle"></div>
+<div class="container footer">
+    <p>© 2015 SPEEDUPBOOKSHOP.COM • SITE BY ZJ</p>
+</div>
+</body>
+</html>

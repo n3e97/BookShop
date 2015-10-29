@@ -1,0 +1,26 @@
+.aboutAccount{
+    margin-top:80px;
+}
+.create_account_text{
+    font-size:xx-large;
+    color:#ccc;
+    margin-top:10px;
+}
+#login_text{
+    display: none;
+}
+#register_text{
+    display:none;
+}
+#reset_text{
+    display:none;
+}
+#login_form{
+    display:none;
+}
+#register_form{
+    display:none;
+}
+#reset_form{
+    display:none;
+}

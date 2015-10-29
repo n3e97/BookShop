@@ -13,4 +13,22 @@ $(function(){
             $("#navbar").removeClass("collapse");
         }
     });
+    $(".book_item").on("mouseover",function(){
+        var hot=$(this).find(".hot_info");
+        if(hot.data('isMoved')){
+        }else{
+            hot.data("isMoved",true);
+            setTimeout(function(){
+                hot.css({marginLeft:'0%'});
+            },0);
+        }
+    });
+    $(".book_item").on("mouseout",function(){
+        var hot=$(this).find(".hot_info");
+        hot.data("isMoved",false);
+        setTimeout(function(){
+            var obj={marginLeft:"-100%"};
+            hot.css(obj);
+        },0);
+    });
 });
