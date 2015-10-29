@@ -1,0 +1,43 @@
+
+.navbar-custom{
+    background-color: #101010;
+    min-height:80px;
+    padding-top:15px;
+}
+.navbar-header>a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+}
+.navbar-header>button{
+    background-color: white;
+}
+.navbar-header>button>span{
+    background-color: #ccc;
+}
+.search{
+}
+.search>div>span{
+    background-color: #101010;
+    cursor:pointer;
+    color:white;
+    font-size:16px;
+    border-right:0px;
+
+}
+.search-input{
+    background-color: #101010;
+    border-left:0px;
+
+}
+.s_sign{
+    margin-top:5px;
+}
+.s_sign>a{
+    font-size: 16px;
+    color:#ccc;
+}
+.footer{
+    text-align: center;
+    color: #b86707;
+}
