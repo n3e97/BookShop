@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f9bfdca-2c5b-41cc-98a8-d22d48edaad2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/index_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/l1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/l2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/l3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/l4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/t1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/t2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/t3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/image/t4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/店主管理界面-主界面.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/店主管理界面-书籍管理-修改商品信息.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/店主管理界面-书籍管理-删除、修改前搜索界面.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/店主管理界面-书籍管理-删除商品.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/店主管理界面-书籍管理-添加商品.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/店主管理界面-帮助管理.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/店主管理界面-订单管理.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/找回密码-①输入账号.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/找回密码-②验证身份.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/找回密码-③重置密码.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/找回密码-重置成功.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/注册-①注册账号.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/注册-②账号信息.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/注册-③完成注册.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/登入.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/global.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/html/index.html" afterPath="$PROJECT_DIR$/public/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/node_modules/inherits/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/http-errors/node_modules/statuses/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/finalhandler/node_modules/unpipe/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/finalhandler/node_modules/unpipe/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/path-to-regexp/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/path-to-regexp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/qs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/node_modules/mime-types/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/node_modules/mime-types/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mustache-promise/node_modules/mustache/package.json" afterPath="$PROJECT_DIR$/node_modules/mustache-promise/node_modules/mustache/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemailer/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemailer/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemailer-smtp-pool/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemailer-smtp-pool/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemailer/node_modules/mailcomposer/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemailer/node_modules/mailcomposer/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemailer/node_modules/mailcomposer/node_modules/buildmail/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemailer/node_modules/mailcomposer/node_modules/buildmail/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nodemailer/node_modules/needle/package.json" afterPath="$PROJECT_DIR$/node_modules/nodemailer/node_modules/needle/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/serve-favicon/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/node_modules/serve-favicon/node_modules/ms/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_router.js" afterPath="$PROJECT_DIR$/web_router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/html/detail.html" afterPath="$PROJECT_DIR$/public/html/detail.html" />
     </list>
     <ignored path="BookShop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,9 +26,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.83688">
-              <caret line="362" column="34" selection-start-line="362" selection-start-column="34" selection-end-line="362" selection-end-column="34" />
-              <folding />
+            <state vertical-scroll-proportion="0.4609929">
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +38,8 @@
       <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/html/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.275862">
-              <caret line="119" column="65" selection-start-line="119" selection-start-column="65" selection-end-line="119" selection-end-column="65" />
+            <state vertical-scroll-proportion="50.206898">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -168,6 +124,7 @@
         <option value="$PROJECT_DIR$/public/html/main.html" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/public/html/index.html" />
+        <option value="$PROJECT_DIR$/public/html/detail.html" />
       </list>
     </option>
   </component>
@@ -704,14 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/html/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.275862">
-          <caret line="119" column="65" selection-start-line="119" selection-start-column="65" selection-end-line="119" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -720,11 +669,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/html/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="50.206898">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.83688">
-          <caret line="362" column="34" selection-start-line="362" selection-start-column="34" selection-end-line="362" selection-end-column="34" />
-          <folding />
+        <state vertical-scroll-proportion="0.4609929">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#3;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
