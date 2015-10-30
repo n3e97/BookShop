@@ -1,3 +1,6 @@
+body{
+
+}
 .book_type{
     font-size:xx-large;
     color:#ccc;
@@ -10,15 +13,20 @@
     border-bottom: solid 1px #ccc;
     background-color:whitesmoke;
 }
-.sidebar{
-    max-width:220px;
-    height:100%;
-    background-color: whitesmoke;
-    padding:0px;
-    font-family:"свт╡";
+.main_container{
+    width:100%;
+    height:auto;
+    overflow-x: hidden;
 }
-.sidebar a{
-
+.sidebar{
+    width:15%;
+    height:auto;
+    padding: 0px;
+    display:inline-block;
+}
+.sidebar>ul{
+    margin-top:0px;
+    background-color: white;
 }
 .sidebar b{
     color: dimgray;
@@ -42,6 +50,9 @@
     margin:0px;
     padding:0px;
 }
+.sidebar>ul>li>div>ul{
+    background-color: #eeeeee;
+}
 .sidebar>ul>li>div>ul>li{
     margin:0px;
     padding:0px;
@@ -61,4 +72,42 @@
 .sidebar>ul>li>div>ul>li>a:before{
     content:"--  ";
 }
-
+.main_area{
+    width:85%;
+    height:auto;
+    margin-top:0px;
+    border-left:solid 1px #ccc;
+    display: inline-block;
+    float:right;
+}
+.area_block{
+    padding:0px;
+    padding-top:20px;
+    width:auto;
+}
+.area_block>div{
+    padding-top: 5px;
+    min-height:200px;
+    max-height: auto;
+    border-top: dotted 1px #ccc;
+}
+.index_img{
+    max-width:200px;
+    max-height:200px;
+}
+.da-thumbs>div>div{
+    width:180px;
+    height:180px;
+    overflow: hidden;
+}
+.da-thumbs>div{
+    width:180px;
+    height:180px;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+.main_footer{
+    display: block;
+    width:100%;
+    clear:both;
+}
