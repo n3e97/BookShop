@@ -23,7 +23,7 @@ exports.newBook=function(req,res,next){
          console.error(err.stack);
          return {
              result:2,
-             msg:"Ìí¼ÓÊ§°Ü"
+             msg:"æ·»åŠ ä¹¦ç›®å¤±è´¥"
          };
      }).then(function(r){
          res.json(r);

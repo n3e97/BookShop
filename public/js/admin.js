@@ -7,8 +7,7 @@
 		current_page_id : 0,
 		itemPerPage : 10,
 		cache_data : []
-	};
-	function newData(data) {
+	};	function newData(data) {
 
 		nextPage();
 	}
@@ -127,17 +126,31 @@
 	w.my_toPage = toPage;
 })(window);
 function reset_new_book() {
-    var parent = $("#add_book_collapse");
-    $(parent).find(".book_item_name").get(0).value = "";
-    $(parent).find(".book_item_author").get(0).value = "";
-    $(parent).find(".book_item_banben").get(0).value = "";
-    $(parent).find(".book_item_publisher").get(0).value = "",
-        $(parent).find(".book_item_price").get(0).value = "",
-        $(parent).find(".book_item_kucun").get(0).value = "",
-        $(parent).find(".book_item_tag").get(0).value = "",
-        $(parent).find(".book_info").find(".edit_area>textarea").get(0).value = "";
-    $("#input_img_slave").get(0).value = "";
-     $("#reset_img").trigger("click");
+	var parent = $("#add_book_collapse");
+	$(parent).find(".book_item_name").get(0).value = "";
+	$(parent).find(".book_item_author").get(0).value = "";
+	$(parent).find(".book_item_banben").get(0).value = "";
+	$(parent).find(".book_item_publisher").get(0).value = "";
+	$(parent).find(".book_item_price").get(0).value = "";
+	$(parent).find(".book_item_kucun").get(0).value = "";
+	$(parent).find(".book_item_tag").get(0).value = "";
+	$(parent).find(".book_info").find(".edit_area>textarea").get(0).value = "";
+	$("#input_img_slave").get(0).value = "";
+	var src = $("#set_img").find("img").attr('src');
+	if (src && src.length > 5) {
+		$.ajax({
+			type : "POST",
+			dataType : "json",
+			url : "/remove_img",
+			data : {
+				src : src
+			},
+			complete : function () {}
+		});
+	}
+	$("#set_img").css({
+		cursor : "pointer"
+	}).html('<div>+</div>');
 }
 $(function () {
 	$(".edit_border").on("mousedown", function (e) {
@@ -167,7 +180,7 @@ $(function () {
 		var self = this;
 		$(self).parent().parent().find(".preview_area").html(markdown.toHTML($(self).get(0).value));
 	});
-	//ȫ��
+	//鍏ㄥ�?
 	$(".book_item_full_screen").on("click", function () {
 		var self = this;
 		var width = window.screen.availWidth,
@@ -205,7 +218,7 @@ $(function () {
 			});
 		}
 	});
-	//�޸�
+	//淇�?
 	var is_disabled = function (parent, b) {
 		var obj = {
 			book_name : $(parent).find(".book_item_name").attr("disabled", b),
@@ -238,11 +251,8 @@ $(function () {
 
 	$(".add_book_item_save").on("click", function () {
 		var parent = $(this).parent().parent().parent();
-		var obj = is_disabled(parent, true);
 		var self = this;
-		$(self).parent().find(".book_item_refresh").css({
-			visibility : "visible"
-		});
+        var obj = is_disabled(parent, true);
 		var data = {
 			book_name : obj.book_name.get(0).value,
 			book_author : obj.book_author.get(0).value,
@@ -254,7 +264,15 @@ $(function () {
 			book_info : obj.book_info.find(".edit_area>textarea").get(0).value,
 			book_tag : obj.book_tag.get(0).value
 		};
-		console.log(data);
+		for (var p in data) {
+			if (data[p] == undefined) {
+				alert("信息不完全！");
+				return;
+			}
+		}
+        $(self).parent().find(".book_item_refresh").css({
+            visibility : "visible"
+        });
 		$.ajax({
 			type : "POST",
 			url : "/new_book",
@@ -287,9 +305,9 @@ $(function () {
 			$("#input_img_slave").trigger("click");
 		});
 	});
-    $("#reset_new_book").on("click",function(){
-        reset_new_book();
-    })
+	$("#reset_new_book").on("click", function () {
+		reset_new_book();
+	})
 });
 function handle_upload_err(err) {
 	alert(err);
@@ -302,4 +320,3 @@ function upload_img_cb(img_url) {
 		cursor : "none"
 	});
 }
-
