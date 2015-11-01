@@ -35,6 +35,7 @@
 }
 #update_books{
     width:85%;
+    display:none;
 }
 #update_books>div{
     margin:0px;
@@ -177,4 +178,12 @@
 .book_item_kucun{}
 .book_id{
     display: none;
+}
+#add_book{
+    margin-top:20px;
+}
+#add_book_accordion{
+    height:600px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
