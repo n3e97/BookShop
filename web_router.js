@@ -1,20 +1,12 @@
 var express=require("express");
 var router=express.Router();
+var sign=require("./routes/sign.js");
 
 router.get("/",function(req,res,next){
     res.redirect("/public/html/index.html");
-   // res.redirect('https://www.baidu.com/');
 });
 
-router.post("/login",function(req,res,next){
-    console.log(req.body);
-    res.json({msg:"ok",result:0});
-});
-router.post("/register",function(req,res,next){
-   console.log(req.body);
-    res.json({"result":2,"msg":"regist ok"});
-});
-router.post("/reset_password",function(req,res,next){
-
-});
+router.post("/login",sign.signIn);
+router.post("/register",sign.signUp);
+router.post("/reset_password",sign.reset_password);
 module.exports=router;

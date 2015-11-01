@@ -16,16 +16,21 @@ function login_event_bind(){
         return false;
     }
    $("#login_submit").on("click",function(e){
-       var email=$("#login_email").get(0).value;
+       var username=$("#login_username").get(0).value;
        var password=$("#login_password").get(0).value;
-       if(email!==undefined&&password!==undefined){
+       if(username!==undefined&&password!==undefined){
            $.ajax({
                type:"POST",
                url:"/login",
                dataType:"json",
-               data:{email:email,password:password},
+               data:{username:username,password:password},
                complete:function(res){
                    alertMsg(1,res.responseJSON);
+                   if(res.responseJSON.result==0){
+                      setTimeout(function(){
+                          window.location="/";
+                      },2000);
+                   }
                }
            });
        }

@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../css/global.css"/>
-    <link rel="stylesheet" href="../css/bookDetail.css"/>
+    <link rel="stylesheet" href="../css/admin.css"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/bookDetail.js"></script>
     <script type="text/javascript" src="../js/global.js"></script>
+    <script type="text/javascript" src="../js/admin.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-custom navbar-fixed-top">
@@ -55,34 +55,61 @@
         </div>
     </div>
 </nav>
-<div class="my_nav"></div>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-         <img src="../image/t1.jpg" class="book_img_detail"/>
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-            <div class="book_main_info">
-                <ul class="list-group">
-                    <li class="list-group-item"><h2>逃离</h2></li>
-                    <li class="list-group-item">David Beazley, Brian K. Jones 著</li>
-                    <li class="list-group-item">陈舸 译</li>
-                    <li class="list-group-item">
-                        <span class="badge">新</span>
-                        24*7 支持
-                    </li>
-                    <li class="list-group-item">每年更新成本</li>
-                    <li class="list-group-item">
-                        <span class="badge">新</span>
-                        折扣优惠
-                    </li>
-                </ul>
-            </div>
-        </div>
+<div class="admin_w">
+    <div id="left_nav" class="hidden-sm hidden-xs">
+        <div></div>
+        <div class="nav_item my_active"><a href="#">更新书籍信息</a></div>
+        <div class="nav_item"><a href="#">添加新书籍</a></div>
+        <div class="nav_item"><a href="#">历史订单查询</a></div>
     </div>
-    <div class="row">
-        <div class="book_detail_info"></div>
-    </div>
+   <div id="update_books" class="container">
+       <section>
+           <div class="search_input">
+               <form role="form">
+                   <div class="form-group col-md-8">
+                       <input type="text" class="form-control" id="search_tag" required="true" placeholder="Input bookname,author,or tag"/>
+                   </div>
+                   <div class="form-group col-md-4">
+                       <button class="btn btn-default" type="button">Search</button>
+                   </div>
+               </form>
+           </div>
+       </section>
+       <section>
+           <div class="panel-group container" id="accordion">
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                       <h4 class="panel-title">
+                           <a data-toggle="collapse"  href="#collapse1" data-parent="#accordion" class="book_edit_item">
+                               bookname
+                           </a>
+                       </h4>
+                      <div class="pull-right book_edit_buttons">
+                          <span><i class="fa fa-refresh fa-spin"></i></span>
+                          <span><i class="fa fa-save"></i></span>
+                          <span><i class="fa fa-expand"></i></span>
+                          <span><i class="fa fa-edit"></i></span>
+                      </div>
+                   </div>
+                   <div id="collapse1" class="panel-collapse collapse">
+                       <div class="panel-body">
+                           test
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+       </section>
+       <section id="pagenation">
+           <ul class="pagination">
+               <li><a href="javascript:void(0)">&laquo;</a></li>
+               <li><a href="javascript:void(0)">&raquo;</a></li>
+           </ul>
+       </section>
+   </div>
+</div>
+<div class="container footer">
+    <p>© 2015 SPEEDUPBOOKSHOP.COM • SITE BY ZJ</p>
 </div>
 </body>
 </html>

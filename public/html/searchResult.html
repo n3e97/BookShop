@@ -9,36 +9,46 @@
     <link rel="stylesheet" href="../css/global.css"/>
     <link rel="stylesheet" href="../css/searchResult.css"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/global.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-custom navbar-fixed-top">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
-                <div class="navbar-header ">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="index_logo" href="./index.html"><i>SpeedUp BookShop</i></a>
-                </div>
+        <div class="col-md-12">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="index_logo" href="./index.html"><i>SpeedUp BookShop</i></a>
             </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div id="navbar" class="navbar-collapse ">
-                    <div class="row pull-right">
-                        <div class="search col-lg-8 col-md-8 col-sm-8">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                                <input type="text" class="form-control search-input" placeholder="Search">
-                            </div>
+            <div id="navbar" class="row navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="form-horizontal" role="form" id="global_search_form">
+                            <span><i class="fa fa-search pull-left"></i></span>
+                            <input placeholder="Search" required="true"  type="text" id="global_search_input" class="form-control">
+                        </form>
+                    </li>
+                    <li class="s_sign" id="s_signIn"><a href="./aboutAccount.html?t=1">Login</a></li>
+                    <li class="s_sign" id="s_signUp"><a href="./aboutAccount.html?t=2">Register</a></li>
+                    <li  id="s_userinfo">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                test<i class="caret"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="https://creatorslog.com/@yyrdl">View Profile</a></li>
+                                <li><a href="/profile">Update Profile</a></li>
+                                <li><a href="/settings">Settings</a></li>
+                                <li><a href="/password">Change Password</a></li>
+                                <li><a href="/auth/logout">Logout</a></li>
+                            </ul>
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 s_sign"><a href="./aboutAccount.html?t=1">Login</a></div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 s_sign"><a href="./aboutAccount.html?t=2">Register</a></div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

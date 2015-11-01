@@ -1,6 +1,4 @@
-body{
 
-}
 .book_type{
     font-size:xx-large;
     color:#ccc;
@@ -24,21 +22,9 @@ body{
     padding: 0px;
     display:inline-block;
 }
-.sidebar>ul{
-    margin-top:0px;
-    background-color: white;
-}
 .sidebar b{
     color: dimgray;
 }
-.sidebar ul,div{
-    display: block;
-    width:100%;
-}
-.sidebar li{
-     display: block;
-    width:100%;
- }
 .sidebar>ul>li {
     margin: 0px;
     padding: 0px;
@@ -87,7 +73,7 @@ body{
 }
 .area_block>div{
     padding-top: 5px;
-    min-height:200px;
+    height:200px;
     max-height: auto;
     border-top: dotted 1px #ccc;
 }

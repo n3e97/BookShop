@@ -1,0 +1,74 @@
+.admin_w{
+    width:100%;
+    margin-top:80px;
+    padding:0px;
+    height:550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-bottom: solid 1px #8a6d3b;
+}
+.admin_w>div{
+    display: inline-block;
+}
+#left_nav{
+    width:180px;
+    height:100%;
+    text-align: center;
+    float:left;
+    border-right:solid 1px #ccc;
+}
+#left_nav>div{
+    width:100%;
+    height:35px;
+    padding:5px;
+}
+.nav_item{
+}
+.nav_item:hover{
+    background-color: #ccc;
+}
+.my_active{
+    border:0px;
+    border-top:solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    border-right:solid 5px white;
+    margin-left:3px;
+}
+#update_books{
+    width:85%;
+}
+#update_books>section{
+    margin:0px;
+}
+#pagenation{
+    margin-top:0px;
+    text-align: center;
+}
+.search_input{
+    margin-top:20px;
+}
+#accordion{
+    margin-top:60px;
+    height:420px;
+    margin-bottom:0px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.panel-title>a{
+    text-decoration: none;
+    display: block;
+    width:100%;
+    height:15px;
+}
+.book_edit_buttons{
+    margin-top:-15px;
+    margin-right:20px;
+}
+.book_edit_buttons>span{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-right:10px;
+    color:black;
+    cursor:pointer;
+}

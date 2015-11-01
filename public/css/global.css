@@ -15,26 +15,60 @@
 .navbar-header>button>span{
     background-color: #ccc;
 }
-.search{
-}
-.search>div>span{
-    background-color: #101010;
-    cursor:pointer;
-    color:white;
-    font-size:16px;
-    border-right:0px;
 
+#global_search_form{
 }
-.search-input{
+#global_search_form>span{
+    color:white;
     background-color: #101010;
+    display: inline-block;
+    font-size: large;
+    width:34px;
+    height:34px;
+    padding:0px;
+    padding-top:7px;
+    padding-left:9px;
+    border:solid 1px #ccc;
+    border-right:0px;
+    float:left;
+    border-radius:3px 0px 0px 3px;
+    cursor:pointer;
+}
+#global_search_form>input{
+    background-color: #101010;
+    display: inline-block;
     border-left:0px;
+    border-radius:0px 3px 3px 0px;
+    width:85%;
 }
 .s_sign{
-    margin-top:5px;
+    margin-top:-7px;
 }
 .s_sign>a{
     font-size: 16px;
     color:#ccc;
+}
+#s_signIn{
+}
+#s_signIn>a:hover{
+    background-color: #101010;
+}
+#s_signUp{
+}
+#s_signUp>a:hover{
+    background-color: #101010;
+}
+#s_userinfo{
+    padding:0px;
+    padding-left:15px;
+    padding-top:5px;
+    cursor:pointer;
+    display: none;
+}
+#s_userinfo>div>a{
+    font-size: 16px;
+    color:#ccc;
+    background-color: #101010 ;
 }
 .footer{
     text-align: center;

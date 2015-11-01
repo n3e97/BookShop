@@ -3,29 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="../css/test.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css"/>
     <link rel="stylesheet" href="../css/global.css"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/test.js"></script>
 
 </head>
 <body>
-   <div class="lab">
-       <ul id="da-thumbs" class="da-thumbs" type="none">
-           <li>
-               <a href="#" class="book_item">
-                   <img src="../image/l1.jpg" alt="新华网" />
-                   <div class="hot_info">
-                       <h3 title="新华网" class="book_name">欧亨利短篇小说集</h3>
-                       <p class="book_info">
-                           欧·亨利被全世界读者公认为二十世纪初最好的短篇小说家，有“美国的莫泊桑”之称，直到今天，故事结局的精彩转折依然被称为“欧·亨利式结尾”。本书收有 ...
-                       </p>
-                       <div class="book_price"><i class="fa fa-jpy"></i><span> 55.0</span></div>
-                   </div>
-               </a>
-           </li>
-      </ul>
-   </div>
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="index_logo" href="./index.html"><i>SpeedUp BookShop</i></a>
+            </div>
+            <div id="navbar" class="row navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="form-horizontal" role="form" id="global_search_form">
+                            <span><i class="fa fa-search pull-left"></i></span>
+                            <input placeholder="Search" required="true"  type="text" id="global_search_input" class="form-control">
+                        </form>
+                    </li>
+                    <li class="s_sign" id="s_signIn"><a href="./aboutAccount.html?t=1">Login</a></li>
+                    <li class="s_sign" id="s_signUp"><a href="./aboutAccount.html?t=2">Register</a></li>
+                    <li  id="s_userinfo">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                              test<i class="caret"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="https://creatorslog.com/@yyrdl">View Profile</a></li>
+                                <li><a href="/profile">Update Profile</a></li>
+                                <li><a href="/settings">Settings</a></li>
+                                <li><a href="/password">Change Password</a></li>
+                                <li><a href="/auth/logout">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
 </body>
 </html>
