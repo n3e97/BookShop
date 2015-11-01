@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="../css/admin.css"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/velocity.min.js"></script>
     <script type="text/javascript" src="../js/global.js"></script>
+    <script type="text/javascript" src="../js/markdown.js"></script>
     <script type="text/javascript" src="../js/admin.js"></script>
 </head>
 <body>
@@ -63,7 +65,7 @@
         <div class="nav_item"><a href="#">历史订单查询</a></div>
     </div>
    <div id="update_books" class="container">
-       <section>
+       <div>
            <div class="search_input">
                <form role="form">
                    <div class="form-group col-md-8">
@@ -74,8 +76,8 @@
                    </div>
                </form>
            </div>
-       </section>
-       <section>
+       </div>
+       <div class="pull-left">
            <div class="panel-group container" id="accordion">
                <div class="panel panel-default">
                    <div class="panel-heading">
@@ -84,28 +86,81 @@
                                bookname
                            </a>
                        </h4>
-                      <div class="pull-right book_edit_buttons">
-                          <span><i class="fa fa-refresh fa-spin"></i></span>
-                          <span><i class="fa fa-save"></i></span>
-                          <span><i class="fa fa-expand"></i></span>
-                          <span><i class="fa fa-edit"></i></span>
-                      </div>
+                       <div class="pull-right book_edit_buttons">
+                           <span class="book_item_refresh"><i class="fa fa-refresh fa-spin"></i></span>
+                           <span class="book_item_save"><i class="fa fa-save"></i></span>
+                           <span class="book_item_full_screen"><i class="fa fa-expand"></i></span>
+                           <span class="book_item_edit"><i class="fa fa-edit"></i></span>
+                       </div>
                    </div>
-                   <div id="collapse1" class="panel-collapse collapse">
+                   <div id="collapse1" class="panel-collapse collapse in">
                        <div class="panel-body">
-                           test
+                           <div class="container">
+                               <div class="row">
+                                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                       <div class="input_img">
+                                           <div>+</div>
+                                       </div>
+                                   </div>
+                                   <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                       <div class="my_input_group">
+                                           <div class="my_input_lable">书名：</div>
+                                           <div class="my_input"><input type="text" class="form-control book_item_name" disabled="true"></div>
+                                       </div>
+                                       <div class="my_input_group">
+                                           <div class="my_input_lable">作者：</div>
+                                           <div class="my_input"><input type="text" class="form-control book_item_author" disabled="true"></div>
+                                       </div>
+                                       <div class="my_input_group">
+                                           <div class="my_input_lable">版本：</div>
+                                           <div class="my_input"><input type="text" class="form-control book_item_banben" disabled="true"></div>
+                                       </div>
+                                       <div class="my_input_group">
+                                           <div class="my_input_lable">出版社：</div>
+                                           <div class="my_input"><input type="text" class="form-control book_item_publisher" disabled="true"></div>
+                                       </div>
+                                       <div class="my_input_group">
+                                           <div class="my_input_lable">价格：</div>
+                                           <div class="my_input"><input type="number" class="form-control book_item_price" placeholder="0" disabled="true"></div>
+                                       </div>
+                                       <div class="my_input_group">
+                                           <div class="my_input_lable">库存量：</div>
+                                           <div class="my_input"><input type="number" class="form-control book_item_kucun" placeholder="0" disabled="true"></div>
+                                       </div>
+                                       <div class="my_input_group">
+                                           <div class="my_input_lable">标签：</div>
+                                           <div class="my_input_sm"><input type="text" class="form-control book_item_tag"></div>
+                                           <div class="my_input_intro">
+                                               <small>不同标签以英文逗号","间隔</small><br/>
+                                               <small>比如:政治,考研</small>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                       <div class="book_info">
+                                           <div class="edit_area">
+                                               <textarea></textarea>
+                                               <div class="edit_border"></div>
+                                           </div>
+                                           <div class="preview_area">
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
                        </div>
                    </div>
                </div>
-
            </div>
-       </section>
-       <section id="pagenation">
+       </div>
+       <div id="pagenation">
            <ul class="pagination">
                <li><a href="javascript:void(0)">&laquo;</a></li>
                <li><a href="javascript:void(0)">&raquo;</a></li>
            </ul>
-       </section>
+       </div>
    </div>
 </div>
 <div class="container footer">

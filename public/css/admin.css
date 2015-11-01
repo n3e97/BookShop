@@ -3,8 +3,7 @@
     margin-top:80px;
     padding:0px;
     height:550px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
     border-bottom: solid 1px #8a6d3b;
 }
 .admin_w>div{
@@ -37,7 +36,7 @@
 #update_books{
     width:85%;
 }
-#update_books>section{
+#update_books>div{
     margin:0px;
 }
 #pagenation{
@@ -48,7 +47,6 @@
     margin-top:20px;
 }
 #accordion{
-    margin-top:60px;
     height:420px;
     margin-bottom:0px;
     overflow-x: hidden;
@@ -71,4 +69,112 @@
     margin-right:10px;
     color:black;
     cursor:pointer;
+}
+
+.input_img{
+    display:inline-block;
+    width:200px;
+    height:200px;
+    border:solid 1px #ccc;
+    text-align: center;
+    cursor:pointer;
+    margin-top:40px;
+}
+.input_img>div{
+    font-size: 200px;
+    color: #ccc;
+    width:50%;
+    height:50%;
+    margin-top:-50px;
+    margin-left:40px;
+}
+.book_basic_info{
+    display: inline-block;
+}
+.my_input_group{
+    width:100%;
+    height:auto;
+    margin-top:10px;
+}
+.my_input_group>div{
+    display: inline-block;
+}
+.my_input_lable{
+    width:90px;
+    text-align: left;
+    font-family:"свт╡";
+}
+.my_input_sm{
+    width:40%;
+}
+.my_input_intro{
+    font-size:xx-small;
+}
+.my_input{
+    width:60%;
+}
+.book_info{
+    width:93%;
+    height:400px;
+    border:solid 1px #ccc;
+    margin-top:20px;
+    overflow: hidden;
+    position: relative;
+}
+.book_info>div{
+    display: inline-block;
+    color:black;
+}
+.edit_area{
+    width:50%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+.edit_area>textarea{
+    width:100%;
+    height:100%;
+    overflow: auto;
+    color:black;
+    text-align: justify;
+    display: inline-block;
+}
+.edit_border{
+    height:100%;
+    width:5px;
+    background-color: #ccc;
+    cursor: ew-resize;
+    position: absolute;
+    top:0px;
+    right:0px;
+    display: inline-block;
+}
+.preview_area{
+    width:50%;
+    max-height: 400px;
+    height:auto;
+    overflow: auto;
+    position:absolute;
+    top:0px;
+    right:0px;
+    margin-left:10px;
+}
+.book_item_refresh{
+    visibility: hidden;
+}
+.book_item_save{}
+.book_item_full_screen{}
+.book_item_edit{}
+.book_item_name{}
+.book_item_banben{}
+.book_item_price{}
+.book_item_author{}
+.book_item_publisher{
+    position:inherit;
+}
+.book_item_tag{}
+.book_item_kucun{}
+.book_id{
+    display: none;
 }
