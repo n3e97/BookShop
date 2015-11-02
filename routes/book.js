@@ -29,3 +29,6 @@ exports.newBook=function(req,res,next){
          res.json(r);
      });
 }
+exports.searchBook=function(req,res,next){
+
+}

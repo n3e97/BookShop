@@ -30,16 +30,18 @@ var user_sign_service=require("../lib/userService").user_sign;
               username:req.body.username,
               email:req.body.email,
               address:req.body.address,
-              phone:req.body.phone
+              phone:req.body.phone,
+              password:req.body.password
           };
-          user_sign_service.signUp(obj).then(function(rt){
+         return  user_sign_service.signUp(obj).then(function(rt){
               return rt;
           });
       }).catch(function(err){
+          console.log(err);
           console.error(err.satck);
           return {
               result:2,
-              msg:"Î´Öª´íÎó"
+              msg:"æœªçŸ¥é”™è¯¯"
           };
       }).then(function(r){
           res.json(r);

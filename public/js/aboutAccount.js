@@ -55,6 +55,7 @@ function regist_event_bind(){
                     dataType:"json",
                     data:{email:email,password:password,address:address,phone:phone,username:username},
                     complete:function(res){
+                        console.log(res.responseJSON);
                         alertMsg(2,res.responseJSON);
                     }
                 });
