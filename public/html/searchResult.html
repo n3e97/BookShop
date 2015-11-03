@@ -56,13 +56,15 @@
 <div class="my_nav"></div>
 <div class="container search_input">
    <div class="row">
-       <div class="col-lg-6 col-sm-10">
-           <input type="text" class="form-control" id="search_tag" placeholder="Input bookname,author,or tag"/>
-       </div>
-       <div class="col-lg-2 col-sm-2">
-           <button class="btn btn-default" type="button">Search</button>
-       </div>
-       <div class="col-lg-4 col-sm-0"></div>
+       <form class="form-horizontal" role="form" id="search_form">
+           <div class="col-lg-6 col-sm-10">
+               <input type="text" class="form-control" required="true" id="search_tag" placeholder="Input bookname,author,or tag"/>
+           </div>
+           <div class="col-lg-2 col-sm-2">
+               <button class="btn btn-default" type="submit">Search</button>
+           </div>
+           <div class="col-lg-4 col-sm-0"></div>
+       </form>
    </div>
 </div>
 <div class="container">
@@ -127,6 +129,7 @@
             </div>
         </div>
     </div>
+
     <div class="row da-thumbs">
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div>
@@ -156,9 +159,37 @@
                 </a>
             </div>
         </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div>
+                <a href="#" class="book_item">
+                    <img src="../image/t2.jpg" class="index_img"/>
+                    <div class="hot_info">
+                        <h4 title="新华网" class="book_name">欧亨利短篇小说集</h4>
+                        <p class="book_info">
+                            欧·亨利被全世界读者公认为二十世纪初最好的短篇小说家，有“美国的莫泊桑”之称，直到今天，故事结局的精彩转折依然被称为“欧·亨利式结尾”。本书收有 ...
+                        </p>
+                        <div class="book_price"><i class="fa fa-jpy"></i><span> 55.0</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div>
+                <a href="#" class="book_item">
+                    <img src="../image/t2.jpg" class="index_img"/>
+                    <div class="hot_info">
+                        <h4 title="新华网" class="book_name">欧亨利短篇小说集</h4>
+                        <p class="book_info">
+                            欧·亨利被全世界读者公认为二十世纪初最好的短篇小说家，有“美国的莫泊桑”之称，直到今天，故事结局的精彩转折依然被称为“欧·亨利式结尾”。本书收有 ...
+                        </p>
+                        <div class="book_price"><i class="fa fa-jpy"></i><span> 55.0</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </div>
-<div class="container" style="text-align: center">
+<div class="container" style="text-align: center" id="pagenation">
     <ul class="pagination">
         <li><a href="#">&laquo;</a></li>
         <li><a href="#">1</a></li>
