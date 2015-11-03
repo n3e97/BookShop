@@ -18,3 +18,27 @@
 .book_detail_info{
 
 }
+.buy_num_c{
+    border:solid 1px red;
+    width:120px;
+    padding:0px;
+}
+.buy_num_c>span{
+    background-color: #ff2a00;
+    font-size: larger;
+    font-weight: bolder;
+    color:white;
+    cursor:pointer;
+}
+#buy_car{
+    width:120px;
+    height:35px;
+    background-color: #ff2a00;
+    color:white;
+    margin-left:200px;
+    margin-top:-35px;
+    text-align: center;
+    border:solid 1px red;
+    padding:5px;
+    cursor:pointer;
+}

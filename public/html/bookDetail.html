@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/bookDetail.css"/>
     <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/markdown.js"></script>
     <script type="text/javascript" src="../js/bookDetail.js"></script>
     <script type="text/javascript" src="../js/global.js"></script>
 </head>
@@ -46,7 +47,7 @@
                                 <li><a href="/profile">Update Profile</a></li>
                                 <li><a href="/settings">Settings</a></li>
                                 <li><a href="/password">Change Password</a></li>
-                                <li><a href="/auth/logout">Logout</a></li>
+                                <li><a href="/logout">Logout</a></li>
                             </ul>
                         </div>
                     </li>
@@ -59,30 +60,39 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-         <img src="../image/t1.jpg" class="book_img_detail"/>
+         <img src="" class="book_img_detail" id="book_img"/>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
             <div class="book_main_info">
                 <ul class="list-group">
-                    <li class="list-group-item"><h2>逃离</h2></li>
-                    <li class="list-group-item">David Beazley, Brian K. Jones 著</li>
-                    <li class="list-group-item">陈舸 译</li>
+                    <li class="list-group-item" id="book_name"></li>
+                    <li class="list-group-item" id="book_author"></li>
+                    <li class="list-group-item" id="book_publisher"></li>
+                    <li class="list-group-item" id="book_banben"></li>
+                    <li class="list-group-item" id="book_kucun"></li>
+                    <li class="list-group-item" id="book_price"></li>
+                    <li class="list-group-item" id="book_tag"></li>
                     <li class="list-group-item">
-                        <span class="badge">新</span>
-                        24*7 支持
-                    </li>
-                    <li class="list-group-item">每年更新成本</li>
-                    <li class="list-group-item">
-                        <span class="badge">新</span>
-                        折扣优惠
+                        <div>
+                            <div class="input-group buy_num_c">
+                                <span class="input-group-addon" id="sub_buy_num">-</span>
+                                <input type="text" class="form-control" value="1" id="buy_num">
+                                <span class="input-group-addon" id="add_buy_num">+</span>
+                            </div>
+                            <div id="buy_car">加入购物车</div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="book_detail_info"></div>
+        <div class="book_detail_info" id="detail_info"></div>
     </div>
+</div>
+<div class="my_divider_middle"></div>
+<div class="container footer">
+    <p>© 2015 SPEEDUPBOOKSHOP.COM • SITE BY ZJ</p>
 </div>
 </body>
 </html>

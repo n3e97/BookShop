@@ -5,9 +5,18 @@
 var userService=require("../lib/userService");
 
 exports.adminRequired=function(req,res,next){
-    var key=req.headers["cookie"];
-    console.log(key);
-
+    var cookie=unescape(req.headers["cookie"]);
+    var username=cookie.split("&&")[1];
+    userService.user_auth.isAdmin(username).then(function(tf){
+        if(tf){
+            next();
+        }else{
+            res.json({
+                result:2,
+                msg:"您没有管理员权限"
+            });
+        }
+    })
 }
 
 exports.userRequired=function(req,res,next){

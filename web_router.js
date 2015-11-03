@@ -29,10 +29,13 @@ router.get(/\/activate{1}.*/,function(req,res,next){
 
 router.post("/login",sign.signIn);
 router.post("/register",sign.signUp);
+router.post("/getbookinfo",book.returnBookInfo);
+router.post("/search_book",book.searchBook);
 
 router.use("/",auth.userRequired);
 router.post("/reset_password",sign.reset_password);
 router.post("/upload_img",auth.adminRequired,upload.recieve_img);
 router.post("/remove_img",upload.remove_img);
 router.post("/new_book",auth.adminRequired,book.newBook);
+
 module.exports=router;

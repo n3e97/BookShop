@@ -30,5 +30,35 @@ exports.newBook=function(req,res,next){
      });
 }
 exports.searchBook=function(req,res,next){
-
+  var search_key=req.body.search_key;
+    bookService.searchBook(search_key).then(function(rt){
+        return {
+            result:0,
+            data:rt,
+            msg:"success"
+        }
+    }).catch(function(err){
+        console.error(err.stack);
+        return {
+            result:2,
+            msg:"failed to searck book"
+        };
+    }).then(function(r){
+        res.json(r);
+    });
+}
+exports.returnBookInfo=function(req,res,next){
+    var info={
+        book_id:req.body.id
+    };
+     bookService.getBookInfo(info).catch(function(err){
+         console.error(err.satck);
+         return [];
+     }).then(function(rt){
+         res.json({
+             result:rt[0]!=undefined?0:2,
+             data:rt[0],
+             msg:rt[0]!=undefined?"success":"该书不存在"
+         });
+     });
 }
