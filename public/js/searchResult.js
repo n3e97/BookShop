@@ -11,13 +11,31 @@ $(function(){
             $("#navbar").removeClass("collapse");
         }
     });
+    $(".book_item").on("mouseover",function(){
+        var hot=$(this).find(".hot_info");
+        if(hot.data('isMoved')){
+        }else{
+            hot.data("isMoved",true);
+            setTimeout(function(){
+                hot.css({marginLeft:'0%'});
+            },0);
+        }
+    });
+    $(".book_item").on("mouseout",function(){
+        var hot=$(this).find(".hot_info");
+        hot.data("isMoved",false);
+        setTimeout(function(){
+            var obj={marginLeft:"-100%"};
+            hot.css(obj);
+        },0);
+    });
     (function(w){
         var log_data_cache = {
             current_page_id : 0,
             itemPerPage : 8,
             cache_data : []
         };
-        var search_key = window.location.search.split('=')[1];
+        var search_key =decodeURIComponent(window.location.search.split('=')[1]);
 
         function newData(data) {
             log_data_cache.current_page_id=0;
@@ -25,19 +43,26 @@ $(function(){
             nextPage();
         }
         var slice=function(str){
-            return str.subString(0,50);
+            return str.slice(0,90)+".....";
         }
         function initBookItem(tar,data) {
-            $(tar).attr("src","./bookDetail.html?bookId="+data.id);
+            $(tar).attr("href","./bookDetail.html?bookId="+data.id);
             $(tar).find('img').attr("src",data.img_url);
             $(tar).find('.book_name').html(data.book_name);
+            $(tar).find('.book_name').attr("title",data.book_name) ;
             $(tar).find(".book_info").html(slice(data.brief_info));
             $(tar).find(".book_price").find('span').html(data.price);
         }
         var showResult = function (data) {
-            $(".book_item").each(function(i,tar){
-                initBookItem(tar,data[i]);
-            })
+            var i= 0,
+                book_items=$(".book_item");
+            for(;i<data.length;i++){
+                $(book_items[i]).parent().parent().css({display:'block'});
+                initBookItem(book_items[i],data[i]);
+            }
+            for(;i<book_items.length;i++){
+                $(book_items[i]).parent().parent().css({display:'none'});
+            }
         }
         var toPage = function (id) {
             id = parseInt(id);
@@ -47,7 +72,7 @@ $(function(){
                 temp.push(log_data_cache.cache_data[i]);
             }
             showResult(temp);
-            $("#pagenation ul").find("li").each(function () {
+            $("#pagenation>ul").find("li").each(function () {
                 $(this).hasClass("active") && $(this).removeClass("active");
                 $(this).text() == id.toString() && ($(this).addClass("active"));
             });
@@ -120,7 +145,6 @@ $(function(){
             };
             $("#search_form").get(0).onsubmit=function(){
                 var v=$("#search_tag").get(0).value;
-                alert(v);
                 if(v){
                     search({search_key:v},newData);
                 }

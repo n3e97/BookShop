@@ -24,6 +24,13 @@ for(var i=0;i<12;i++){
 }
 
 $(function(){
+    $("#global_search_form").get(0).onsubmit=function(){
+        var v=$("#global_search_input").get(0).value;
+        if(v!==undefined){
+            window.location="/public/html/searchResult.html?search_key="+encodeURIComponent(v);
+        }
+        return false;
+    }
     $(".book_item").on("mouseover",function(){
         var hot=$(this).find(".hot_info");
         if(hot.data('isMoved')){
@@ -54,8 +61,8 @@ $(function(){
      };
     var index=0;
     var getBookData=function(cb){
-        cb(testData);
-        /*
+       // cb(testData);
+        alert("ok");
         $.ajax({
             type:"GET",
             dataType:"json",
@@ -64,7 +71,7 @@ $(function(){
                 cb(res.responseJSON);
             }
         });
-        */
+
     }
     var pickData=function(tar){
         var temp=[];
@@ -75,12 +82,23 @@ $(function(){
         tar.index=tar.index%(Math.ceil(tar.dt.length/6));
         return temp;
     }
+    var slice=function(str){
+        return str.slice(0,90)+".....";
+    }
     var refreshItemData=function(tar,data){
-        $(tar).attr("href",data.href);
+        $(tar).attr("href","./bookDetail.html?bookId="+data.id);
+        $(tar).find('img').attr("src",data.img_url);
+        $(tar).find('.book_name').html(data.book_name);
+        $(tar).find('.book_name').attr("title",data.book_name) ;
+        $(tar).find(".book_info").html(slice(data.brief_info));
+        $(tar).find(".book_price").find('span').html(data.price);
+        /*
+        $(tar).attr("href",""data.href);
         $(tar).find("img").attr("src",data.imgSrc);
         $(tar).find(".book_name").text(data.title);
         $(tar).find(".book_info").text(data.briefInfo);
         $(tar).find(".book_price").find("span").text(" "+data.price);
+        */
     }
     var refreshBlock=function(block,datas,t){
         var temp=$(block).find(".book_item");
@@ -119,6 +137,7 @@ $(function(){
     getBookData(function(res){
        if(res.result===0){
            var dt=res.data;
+           console.log(dt);
            BookData.zhuda.dt=dt.zhuda;
            BookData.texiao.dt=dt.texiao;
            BookData.kaoshi.dt=dt.kaoshi;
@@ -127,7 +146,7 @@ $(function(){
                setInterval(setBookItemAnimation,10000);
            },0);
        }else{
-           alert("获取推荐书目失败�?");
+           alert(res.msg);
        }
     });
 });

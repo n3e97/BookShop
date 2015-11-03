@@ -62,3 +62,48 @@ exports.returnBookInfo=function(req,res,next){
          });
      });
 }
+exports.starBook=function(req,res,next){
+   bookService.returnStarBook(8,10).then(function(rt){
+        return {
+            result:0,
+            msg:"success",
+            data:rt
+        };
+   }).catch(function(err){
+       console.error(err.stack);
+       return {
+           result:2,
+           msg:"Unknown error!"
+       };
+   }).then(function(rs){
+       res.json(rs);
+   })
+}
+exports.indexBook=function(req,res,next){
+    bookService.returnStarBook(36,1).then(function(rt){
+        var obj={
+            result:0,
+            msg:"success",
+            data:{
+                zhuda:[],
+                texiao:[],
+                kaoshi:[]
+            }
+        }
+       for(var i=0;i<12;i++){
+           obj.data.zhuda.push(rt[i]);
+           obj.data.texiao.push(rt[i+12]);
+           obj.data.kaoshi.push(rt[i+24]);
+       }
+        return obj;
+    }).catch(function(err){
+        console.error(err.stack);
+        return {
+            result:2,
+            msg:"Unknown error!"
+        };
+    }).then(function(rs){
+        console.log(rs);
+        res.json(rs);
+    })
+}

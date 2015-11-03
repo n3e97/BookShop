@@ -11,7 +11,7 @@
 			$("#book_name").html("<h2>" + data.book_name + "</h2>");
 			$("#book_author").html(data.author);
 			$("#book_publisher").html(data.publisher);
-			$("#book_banben").html("版本" + data.banben + '<span class="badge">新</span>');
+			$("#book_banben").html("版本: " + data.banben + '<span class="badge">新</span>');
 			$("#book_price").html("价格: " + data.price + "元");
 			$("#book_kucun").html("库存: " + data.num_not_sold);
 			$("#book_tag").html("标签: " + data.tag);
