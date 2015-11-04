@@ -45,6 +45,7 @@
         };
 
     log.alert=function(msg,cb){
+        console.log(msg);
         tasks_stack.push({
             msg:msg,
             cb:cb

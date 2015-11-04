@@ -1,0 +1,62 @@
+
+#my_car_widget{
+    position:fixed;
+    right:0px;
+    bottom: 0px;
+    width:250px;
+    min-height:43px;
+    border:solid 1px red;
+}
+#my_car_widget_toggle{
+    margin-top:0px;
+    width:100%;
+    height:40px;
+    background-color: #ff2a00;
+    cursor:pointer;
+}
+#my_car_widget_box{
+    width:100%;
+    max-height:600px;
+    overflow-y: auto;
+    background-color:white;
+    padding:5px;
+    display:none;
+}
+.my_car_widget_goods{
+    width:100%;
+    height:50px;
+    padding:5px;
+    margin-bottom: 5px;
+    border:solid 1px #ccc;
+}
+.my_car_widget_goods>div{
+    display:inline-block;
+}
+.my_car_widget_goods_img{
+    display: inline-block;
+    width:18%;
+}
+.my_car_widget_goods_name{
+    margin-left:10px;
+    margin-top:10px;
+}
+.my_car_widget_goods_delete{
+    margin-top:2px;
+    margin-right:5px;
+    cursor:pointer;
+}
+#my_car_widget_submit{
+    width:100%;
+    height:60px;
+    padding:20px;
+    background-color: white;
+}
+#my_car_widget_submit>div{
+    background-color:#ff2a00;
+    color:white;
+    height:40px;
+    font-size: large;
+    text-align: center;
+    padding-top:10px;
+    cursor:pointer;
+}

@@ -24,6 +24,7 @@ for(var i=0;i<12;i++){
 }
 
 $(function(){
+    Cart.show();
     $("#global_search_form").get(0).onsubmit=function(){
         var v=$("#global_search_input").get(0).value;
         if(v!==undefined){

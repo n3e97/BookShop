@@ -36,7 +36,7 @@
 	});
 
 	$(function () {
-	    console.log($("#sub").length);
+		Cart.show();
 		$("#sub").on("click", function () {
 			var self = this;
 			var r = parseInt($("#buy_num").get(0).value);;
@@ -59,7 +59,18 @@
 					book_id : id,
 					buy_num : num
 				},
-				complete : function (res) {}
+				complete : function (res) {
+					if(res.responseJSON.result===0){
+						var goods={
+                            img_url:book_data.img_url,
+							name:book_data.book_name,
+							href:"./bookDetail.html?bookId="+book_data.id
+						};
+                       Cart.addGoods(goods)
+					}else{
+						alert(res.responseJSON.msg);
+					}
+				}
 			});
 		});
 	})

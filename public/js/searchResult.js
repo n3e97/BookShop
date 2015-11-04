@@ -2,6 +2,7 @@
  * Created by zj on 2015/10/25.
  */
 $(function(){
+    Cart.show();
     $(window).bind("load resize",function(){
         var width=(this.window.innerWidth>0)?this.window.innerWidth:this.screen.availWidth;
         if(width<768){
