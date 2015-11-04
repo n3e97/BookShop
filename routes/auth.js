@@ -24,6 +24,9 @@ exports.userRequired=function(req,res,next){
      var cookie=unescape(req.headers["cookie"]);
      var key=cookie.split("&&")[0],
          username=cookie.split("&&")[1];
+     req.userinfo={
+         username:username
+     };
      userService.user_auth.auth(key,username).then(function(rt){
          return rt;
      }).catch(function(err){

@@ -66,7 +66,7 @@
 							name:book_data.book_name,
 							href:"./bookDetail.html?bookId="+book_data.id
 						};
-                       Cart.addGoods(goods)
+                        Cart.addGoods(goods)
 					}else{
 						alert(res.responseJSON.msg);
 					}

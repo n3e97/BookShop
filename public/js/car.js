@@ -44,6 +44,9 @@
             d2.innerHTML=html;
             $(d2).insertBefore($("#my_car_widget_submit"));
             setTimeout(function(){
+                if(!$("#my_car_widget_toggle").data("is_in")){
+                    $("#my_car_widget_toggle").trigger("click");
+                }
                 bind_delete_event();
             },200);
         },

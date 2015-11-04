@@ -36,8 +36,11 @@ router.post("/search_book",book.searchBook);
 router.use("/",auth.userRequired);
 
 router.post("/reset_password",sign.reset_password);
+router.post("/buy_book",book.buy_book);
+router.get("/submit_orders",book.submit_orders);
+router.get("/get_order_temp",book.returnTempOrder);
 router.post("/upload_img",auth.adminRequired,upload.recieve_img);
-router.post("/remove_img",upload.remove_img);
+router.post("/remove_img",auth.adminRequired,upload.remove_img);
 router.post("/new_book",auth.adminRequired,book.newBook);
 
 module.exports=router;
